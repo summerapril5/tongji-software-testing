@@ -1,0 +1,9 @@
+server:
+  port: 8081
+fts:
+  db:
+    database: fts-account
+  swagger:
+    title: 基金销售系统账户服务接口文档
+    description: 基金销售系统账户服务接口文档
+    package: com.github.JLQusername.controller

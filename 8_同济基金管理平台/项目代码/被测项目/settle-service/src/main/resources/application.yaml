@@ -1,0 +1,11 @@
+server:
+  port: 8085
+fts:
+  db:
+    database: fts-settle
+    host: 47.76.158.138
+    pw: 123
+  swagger:
+    title: 基金销售系统清算服务接口文档
+    description: 基金销售系统清算服务接口文档
+    package: com.github.JLQusername.controller

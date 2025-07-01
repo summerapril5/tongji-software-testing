@@ -1,0 +1,49 @@
+create table admin
+(
+    admin_account bigint      not null
+        primary key,
+    phone_number  char(11)    null,
+    password      varchar(45) null,
+    constraint admin_account_UNIQUE
+        unique (admin_account),
+    constraint phone_number_UNIQUE
+        unique (phone_number)
+);
+
+create table bankcard
+(
+    bankcard_number char(16)         not null
+        primary key,
+    balance         double default 0 null,
+    constraint bank_card_number_UNIQUE
+        unique (bankcard_number)
+);
+
+create table customer
+(
+    fund_account bigint        not null
+        primary key,
+    phone_number char(11)      null,
+    password     varchar(45)   null,
+    name         varchar(45)   null,
+    id_number    char(18)      null,
+    risk_level   int default 0 null,
+    constraint fund_account_UNIQUE
+        unique (fund_account),
+    constraint id_number_UNIQUE
+        unique (id_number),
+    constraint phone_number_UNIQUE
+        unique (phone_number)
+);
+
+create table trading_account
+(
+    trading_account_id bigint            not null
+        primary key,
+    fund_account       bigint            not null,
+    bankcard_number    char(16)          not null,
+    is_deleted         tinyint default 0 not null,
+    constraint trading_account_UNIQUE
+        unique (trading_account_id)
+);
+

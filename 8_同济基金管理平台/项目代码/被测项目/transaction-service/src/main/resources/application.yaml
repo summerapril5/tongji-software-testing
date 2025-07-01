@@ -1,0 +1,13 @@
+server:
+  port: 8086
+fts:
+  db:
+    database: fts-transaction
+    host: 127.0.0.1
+    port: 3307
+    username: root
+    pw: root123
+  swagger:
+    title: 基金销售系统申购赎回撤单服务接口文档
+    description: 基金销售系统申购赎回撤单服务接口文档
+    package: com.github.JLQusername.controller

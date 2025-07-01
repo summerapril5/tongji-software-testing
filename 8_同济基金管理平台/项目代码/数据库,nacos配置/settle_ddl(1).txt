@@ -1,0 +1,9 @@
+create table our_system
+(
+    transaction_date              date              not null
+        primary key,
+    has_stopped_application       tinyint default 0 not null,
+    has_exported_application_data tinyint default 0 not null,
+    has_received_market_data      tinyint default 0 not null
+);
+

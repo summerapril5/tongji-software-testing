@@ -1,0 +1,23 @@
+create table net_value
+(
+    id         bigint auto_increment
+        primary key,
+    product_id int              not null,
+    net_value  double default 0 not null,
+    date       date             not null,
+    constraint product_id_UNIQUE
+        unique (id)
+);
+
+create table product
+(
+    product_id     int auto_increment
+        primary key,
+    product_name   varchar(45)             not null,
+    risk_level     int         default 4   not null,
+    product_type   varchar(45) default '0' not null,
+    product_status int         default 0   not null,
+    constraint product_id_UNIQUE
+        unique (product_id)
+);
+

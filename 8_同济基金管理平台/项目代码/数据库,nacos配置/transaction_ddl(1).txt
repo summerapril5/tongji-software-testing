@@ -1,0 +1,41 @@
+create table holding
+(
+    product_id         int              not null,
+    id                 bigint           not null
+        primary key,
+    shares             double default 0 not null,
+    trading_account_id bigint           not null,
+    constraint id_UNIQUE
+        unique (id)
+);
+
+create table redemption
+(
+    transaction_id     bigint            not null
+        primary key,
+    trading_account_id bigint            not null,
+    product_name       varchar(45)       not null,
+    application_time   datetime          not null,
+    is_cancel          tinyint default 0 not null,
+    redemption_shares  double  default 0 not null,
+    fund_account       bigint            not null,
+    product_id         int               not null,
+    constraint transaction_id_UNIQUE
+        unique (transaction_id)
+);
+
+create table subscription
+(
+    transaction_id      bigint            not null
+        primary key,
+    trading_account_id  bigint            not null,
+    product_name        varchar(45)       not null,
+    application_time    datetime          not null,
+    is_cancel           tinyint default 0 not null,
+    subscription_amount double  default 0 not null,
+    fund_account        bigint            not null,
+    product_id          int               not null,
+    constraint transaction_id_UNIQUE
+        unique (transaction_id)
+);
+
