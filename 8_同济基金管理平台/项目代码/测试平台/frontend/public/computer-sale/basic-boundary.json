@@ -1,0 +1,21 @@
+[
+  { "input": "1 40 45", "expected": "3250 650" },
+  { "input": "2 40 45", "expected": "3275 655" },
+  { "input": "69 40 45", "expected": "4950 990" },
+  { "input": "70 40 45", "expected": "4975 995" },
+  { "input": "35 1 45", "expected": "2930 586" },
+  { "input": "35 2 45", "expected": "2960 592" },
+  { "input": "35 79 45", "expected": "5270 1054" },
+  { "input": "35 80 45", "expected": "5300 1060" },
+  { "input": "35 40 1", "expected": "2120 424" },
+  { "input": "35 40 2", "expected": "2165 433" },
+  { "input": "35 40 89", "expected": "6080 1216" },
+  { "input": "35 40 90", "expected": "6125 1225" },
+  { "input": "35 40 45", "expected": "4100 820" },
+  { "input": "9 10 10", "expected": "975 97.5" },
+  { "input": "10 10 10", "expected": "1000 100" },
+  { "input": "11 10 10", "expected": "1025 153.75" },
+  { "input": "11 20 20", "expected": "1775 266.25" },
+  { "input": "12 20 20", "expected": "1800 270" },
+  { "input": "13 20 20", "expected": "1825 365" }
+]

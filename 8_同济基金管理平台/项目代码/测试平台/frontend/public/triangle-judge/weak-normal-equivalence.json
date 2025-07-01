@@ -1,0 +1,6 @@
+[
+  { "input": "1 4 5", "expected": "不构成三角形" },
+  { "input": "3 5 7", "expected": "三边均不等的三角形" },
+  { "input": "3 3 2", "expected": "等腰三角形" },
+  { "input": "7 7 7", "expected": "等边三角形" }
+]

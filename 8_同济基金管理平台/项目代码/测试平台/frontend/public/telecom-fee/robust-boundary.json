@@ -1,0 +1,15 @@
+[
+  { "input": "0 3", "expected": "25" },
+  { "input": "1 2", "expected": "25.15" },
+  { "input": "200 6", "expected": "55" },
+  { "input": "44639 5", "expected": "6521.3245" },
+  { "input": "44640 4", "expected": "6521.47" },
+  { "input": "300 0", "expected": "69.145" },
+  { "input": "100 1", "expected": "39.82" },
+  { "input": "500 10", "expected": "100" },
+  { "input": "700 11", "expected": "130" },
+  { "input": "-1 5", "expected": "错误提示" },
+  { "input": "44641 4", "expected": "错误提示" },
+  { "input": "300 -1", "expected": "错误提示" },
+  { "input": "400 12", "expected": "错误提示" }
+]

@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inter', 'HarmonyOS Sans', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+  background: #f4f7fb;
+  color: #233056;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f5fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9d8ee;
+  border-radius: 8px;
+}
+.el-card {
+  border-radius: 18px !important;
+}
+.el-main {
+  padding: 36px 0 0 0;
+}
+.el-dialog {
+  border-radius: 20px !important;
+}
